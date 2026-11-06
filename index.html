@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Hesham | Junior ML & AI Engineer</title>
+  <meta name="description" content="Portfolio of Mohamed Hesham - Junior Machine Learning & AI Engineer specializing in Python, Scikit-Learn, PyTorch, Data Analysis, and Applied AI solutions." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor / Mouse Glow Elements -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>MH<span class="logo-accent">.ai</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#feedback" class="nav-link">Feedback</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon theme-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="menuToggle" class="btn-icon menu-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Home / Hero Section (Cleaned: Code Box Removed) -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Open to Junior ML / AI Engineer Roles & Internships
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Mohamed Hesham</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Junior ML & AI Engineer <span class="ts-badge"><i class="fa-solid fa-brain"></i> Machine Learning & Python</span>
+          </h2>
+          <p class="hero-desc">
+            Passionate about transforming raw data into actionable intelligence. Building predictive Machine Learning models, exploring Deep Learning architectures, and developing practical AI applications with Python, PyTorch, and Scikit-Learn.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Hire Me
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-folder-open"></i> View Projects
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <span class="social-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/mohamed-hesham-ml" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">Who I Am</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- 2. About Card (No pictures) -->
+          <div class="about-card reveal">
+            <h3>Mohamed Hesham</h3>
+            <p class="role-caption">Junior Machine Learning & AI Engineer</p>
+            <div class="about-quick-links">
+              <a href="https://www.linkedin.com/in/mohamed-hesham-ml" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-linkedin">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+              </a>
+              <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-github">
+                <i class="fa-brands fa-github"></i> GitHub Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="about-details reveal">
+            <h3 class="about-lead">Passionate About Solving Real-World Problems with Machine Learning</h3>
+            <p class="about-text">
+              I am Mohamed Hesham, a motivated <strong>Junior Machine Learning and Artificial Intelligence Engineer</strong> with a strong foundation in computer science, statistics, and linear algebra. I love working with data — from exploratory analysis and feature engineering to training, tuning, and deploying predictive models.
+            </p>
+            <p class="about-text">
+              I have hands-on experience developing projects in supervised and unsupervised learning, convolutional neural networks (CNNs) for image classification, and natural language processing (NLP). I am a proactive learner who enjoys keeping up with new research and building reproducible, well-documented code.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="stat-box">
+                <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">ML Projects Built</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Datasets Analyzed</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num" data-count="600">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Hours of Model Training</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+                <span class="stat-label">5-Star Feedback</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Education Section -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Academic Background</p>
+          <h2 class="section-title">Education</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content card-interactive">
+              <span class="timeline-date">2019 - 2023</span>
+              <h3 class="timeline-title">B.Sc. in Computer Science & Artificial Intelligence</h3>
+              <p class="timeline-institution"><i class="fa-solid fa-university"></i> Faculty of Computer Science</p>
+              <p class="timeline-desc">
+                Core coursework: Data Structures, Algorithms, Calculus, Linear Algebra, Probability & Statistics, Machine Learning, Deep Learning, and Database Management. Completed graduation project in AI with distinction.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+            <div class="timeline-content card-interactive">
+              <span class="timeline-date">2023 - 2024</span>
+              <h3 class="timeline-title">Applied Machine Learning & Deep Learning Specialization</h3>
+              <p class="timeline-institution"><i class="fa-solid fa-award"></i> Professional Online Specialization</p>
+              <p class="timeline-desc">
+                Comprehensive practical training focusing on Python, NumPy, Pandas, Scikit-Learn pipelines, PyTorch neural networks, hyperparameter tuning, and model evaluation metrics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Experience</p>
+          <h2 class="section-title">Work Experience & Internships</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-robot"></i></div>
+            <div class="timeline-content card-interactive">
+              <div class="timeline-header-flex">
+                <span class="timeline-date">2023 - Present</span>
+                <span class="badge-role">Current Position</span>
+              </div>
+              <h3 class="timeline-title">Junior Machine Learning Engineer</h3>
+              <p class="timeline-institution"><i class="fa-solid fa-building"></i> AI Solutions Studio</p>
+              <p class="timeline-desc">
+                Building and evaluating supervised ML models for tabular classification and regression. Performing data cleaning, feature engineering, cross-validation, and creating interactive demonstration apps using Streamlit and FastAPI.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-content card-interactive">
+              <span class="timeline-date">2023</span>
+              <h3 class="timeline-title">AI & Data Science Intern</h3>
+              <p class="timeline-institution"><i class="fa-solid fa-building"></i> Tech Innovations Hub</p>
+              <p class="timeline-desc">
+                Assisted senior engineers in preparing and annotating datasets for computer vision models, fine-tuned baseline classification architectures, and documented model metrics and ROC-AUC curves.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Data Cleaning</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+            <div class="timeline-content card-interactive">
+              <span class="timeline-date">2022 - 2023</span>
+              <h3 class="timeline-title">Junior Freelance Python & ML Developer</h3>
+              <p class="timeline-institution"><i class="fa-solid fa-globe"></i> Self-Employed</p>
+              <p class="timeline-desc">
+                Developed web scrapers, data cleaning scripts, and predictive models for university researchers and small businesses, consistently receiving 5-star reviews for clarity and timely delivery.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Projects Section (Realistic Junior ML Projects) -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Hands-on Portfolio</p>
+          <h2 class="section-title">Featured ML & AI Projects</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart Agriculture Assistant (Real Project) -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah/Smart-Agriculture-Assistant" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/mohamedheshamsalah/Smart-Agriculture-Assistant" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Smart Agriculture Assistant</h3>
+            <p class="project-desc">
+              An intelligent machine learning and computer vision system built to assist farmers in precision agriculture. Recommends optimal crops based on soil nutrients (N, P, K) and climate factors, detects plant leaf diseases using deep learning, and predicts fertilizer requirements.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Object Detection & Tracking with YOLOv8</h3>
+            <p class="project-desc">
+              Trained a custom YOLOv8 model for real-time detection in webcam streams. Implemented bounding box filtering, custom data augmentation, and confidence threshold sliders via OpenCV.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">YOLOv8</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Document Q&A Assistant (RAG Pipeline)</h3>
+            <p class="project-desc">
+              Retrieval-Augmented Generation (RAG) assistant allowing users to upload PDF documents and ask questions in natural language, using Hugging Face embeddings and Chroma vector store.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">HuggingFace</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Chest X-Ray Disease Classifier (CNN)</h3>
+            <p class="project-desc">
+              Deep convolutional neural network using Transfer Learning (ResNet-18) to classify normal vs pneumonia medical scans with 94.2% test accuracy and confusion matrix visualization.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">TorchVision</span>
+              <span class="tech-tag">Transfer Learning</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Real-Time Sentiment Analysis API</h3>
+            <p class="project-desc">
+              Lightweight sentiment analysis REST API built with FastAPI that classifies customer reviews as positive, neutral, or negative using a fine-tuned DistilBERT transformer model.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Swagger UI</span>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card card-interactive reveal">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Automated Exploratory Data Analysis (EDA) Tool</h3>
+            <p class="project-desc">
+              A Python data utility that automatically ingests CSV files, detects missing values, checks correlations, generates interactive Seaborn charts, and outputs a summary report.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Jupyter</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Technical Competence</p>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Python & OOP Fundamentals -->
+          <div class="skill-category card-interactive reveal">
+            <div class="category-header">
+              <i class="fa-brands fa-python"></i>
+              <h3>Python & OOP</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python Core & Scripting</span>
+                <span>94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 94%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Object-Oriented Programming (OOP)</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Inheritance, Polymorphism & Classes</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Clean Code & Modular Design</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 2. Data Structures & Algorithms -->
+          <div class="skill-category card-interactive reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>Data Structures & Algorithms</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Arrays, Lists, Stacks & Queues</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Hashmaps & Sets (Hashing)</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Trees, Recursion & Binary Search</span>
+                <span>84%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 84%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Time & Space Complexity (Big-O)</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 3. Machine Learning Fundamentals -->
+          <div class="skill-category card-interactive reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Machine Learning (ML)</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Supervised (Regression & Classification)</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Scikit-Learn Framework</span>
+                <span>94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 94%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Exploratory Data Analysis (EDA)</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Feature Engineering & Model Evaluation</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 4. Deep Learning Fundamentals -->
+          <div class="skill-category card-interactive reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-brain"></i>
+              <h3>Deep Learning (DL)</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Neural Networks & Backpropagation</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PyTorch Framework & Tensors</span>
+                <span>86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 86%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Convolutional Neural Networks (CNN)</span>
+                <span>84%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 84%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Loss Functions, Optimizers & Overfitting</span>
+                <span>86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 86%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 5. Math & Fundamental Tools -->
+          <div class="skill-category card-interactive reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Math & Fundamental Tools</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>NumPy & Pandas (Data Manipulation)</span>
+                <span>94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 94%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Linear Algebra, Calculus & Statistics</span>
+                <span>86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 86%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Data Visualization (Matplotlib, Seaborn)</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git & GitHub (Version Control)</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="--val: 92%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Services Section -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">What I Offer</p>
+          <h2 class="section-title">Services & Offerings</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card card-interactive reveal">
+            <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3 class="service-title">Exploratory Data Analysis (EDA)</h3>
+            <p class="service-desc">
+              Cleaning messy raw datasets, identifying outliers, finding key correlations, and delivering beautiful visual charts with actionable insights.
+            </p>
+          </div>
+
+          <div class="service-card card-interactive reveal">
+            <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3 class="service-title">Predictive ML Modeling</h3>
+            <p class="service-desc">
+              Building, training, and tuning supervised machine learning models for classification, regression, and customer behavior forecasting.
+            </p>
+          </div>
+
+          <div class="service-card card-interactive reveal">
+            <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="service-title">Interactive AI Web Apps</h3>
+            <p class="service-desc">
+              Transforming your machine learning scripts and models into intuitive, easy-to-use Streamlit web applications for fast client demonstrations.
+            </p>
+          </div>
+
+          <div class="service-card card-interactive reveal">
+            <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+            <h3 class="service-title">FastAPI Model Endpoints</h3>
+            <p class="service-desc">
+              Wrapping trained ML and deep learning models into RESTful API endpoints with clean JSON input/output schemas ready for web and mobile apps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Feedback / Testimonials Section (All 5-Star Reviews) -->
+    <section id="feedback" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Feedback</p>
+          <h2 class="section-title">Testimonials & Reviews</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="feedback-grid">
+          <!-- Feedback 1 -->
+          <div class="feedback-card card-interactive reveal">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Mohamed Hesham showed exceptional dedication during our ML project. He cleaned our agricultural datasets, engineered insightful soil-weather features, and built the high-accuracy Smart Agriculture Assistant. Highly recommended as a talented junior engineer!"
+            </p>
+            <div class="feedback-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div class="author-info">
+                <h4>Karim Mansour</h4>
+                <p>Senior Data Scientist & Project Lead</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback 2 -->
+          <div class="feedback-card card-interactive reveal">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Very quick learner with a strong grasp of Python and PyTorch. Mohamed took our computer vision task and delivered a functioning YOLOv8 prototype ahead of schedule. Great communication on WhatsApp!"
+            </p>
+            <div class="feedback-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div class="author-info">
+                <h4>Dr. Youssef Nabil</h4>
+                <p>AI Lab Director & Professor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback 3 -->
+          <div class="feedback-card card-interactive reveal">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Working with Mohamed was a pleasure. He built a Streamlit dashboard for our sales data with automated ML predictions that our team uses daily. Reliable, polite, and technically proficient."
+            </p>
+            <div class="feedback-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div class="author-info">
+                <h4>Sarah Jenkins</h4>
+                <p>Product Manager, Apex Retail</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Certifications Section -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Credentials</p>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <div class="cert-card card-interactive reveal">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-title">Machine Learning Specialization</h3>
+              <p class="cert-issuer">DeepLearning.AI / Coursera</p>
+              <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Verified 2023</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-interactive reveal">
+            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-title">Python for Data Science & AI</h3>
+              <p class="cert-issuer">IBM Professional Certification</p>
+              <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Verified 2023</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-interactive reveal">
+            <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-title">Neural Networks & Deep Learning</h3>
+              <p class="cert-issuer">DeepLearning.AI</p>
+              <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Verified 2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-interactive reveal">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-title">Data Analysis with Pandas & NumPy</h3>
+              <p class="cert-issuer">Kaggle Learning Academy</p>
+              <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Verified 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Get In Touch (Contact) Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Let's Connect</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Channels -->
+          <div class="contact-info-panel reveal">
+            <h3 class="contact-lead">Interested in working together or hiring me?</h3>
+            <p class="contact-sub">
+              I am actively looking for Junior ML Engineer positions, AI internships, and collaborative data projects. Connect with me on LinkedIn, explore my GitHub, or send a message below!
+            </p>
+
+            <div class="contact-cards-list">
+              <a href="https://www.linkedin.com/in/mohamed-hesham-ml" target="_blank" rel="noopener noreferrer" class="contact-channel-card card-interactive">
+                <div class="channel-icon icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="channel-info">
+                  <h4>Connect on LinkedIn</h4>
+                  <p>in/mohamed-hesham-ml</p>
+                </div>
+                <i class="fa-solid fa-chevron-right channel-arrow"></i>
+              </a>
+
+              <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" class="contact-channel-card card-interactive">
+                <div class="channel-icon icon-github"><i class="fa-brands fa-github"></i></div>
+                <div class="channel-info">
+                  <h4>Explore My GitHub</h4>
+                  <p>github.com/mohamedheshamsalah</p>
+                </div>
+                <i class="fa-solid fa-chevron-right channel-arrow"></i>
+              </a>
+
+              <div class="contact-channel-card card-interactive">
+                <div class="channel-icon icon-location"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="channel-info">
+                  <h4>Location</h4>
+                  <p>Cairo, Egypt (Available Remotely)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <span class="social-label">Find Me Online:</span>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamed-hesham-ml" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mohamedheshamsalah" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel card-interactive reveal">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Junior ML Opportunity / Project Inquiry" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="req">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="formFeedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Mohamed Hesham. Junior Machine Learning & AI Engineer.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
